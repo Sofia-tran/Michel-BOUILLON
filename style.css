@@ -12,6 +12,10 @@ h1, h2, h3 {
     font-family: 'Playfair Display', serif;
 }
 
+h1, h2 {
+    text-decoration: underline;
+}
+
 header {
     background-color: black;
     height: 70px;
@@ -69,6 +73,7 @@ form label {
 form input {
     padding: 8px;
     border: 1px solid;
+    width: 300px;
 }
 
 form button {
@@ -100,8 +105,8 @@ form button {
 }
 
 .plat img {
-    width: 500px;
-    height: 300px;
+    width: 400px;
+    height: 200px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -230,4 +235,133 @@ footer {
 
 .horaires {
     text-align: center;
+}
+
+@media (max-width: 768px) {
+
+  header {
+    height: auto;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+  }
+
+  #signature {
+    height: 40px;
+  }
+
+  #reservation {
+    padding: 20px;
+    text-align: center;
+  }
+
+  form {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  form input, form button {
+    width: 100%;
+  }
+
+  #carte {
+    padding: 20px;
+  }
+
+  .plat {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  .plat.reverse {
+    flex-direction: column;
+  }
+
+  .plat img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .description {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  #galerie {
+    padding: 20px;
+  }
+
+  .galerie-grille {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .galerie-grille img {
+    height: 150px;
+  }
+
+  #temoignages {
+    padding: 20px;
+  }
+
+  .temoignage-grille {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 100%;
+  }
+
+  .temoignage {
+    padding: 15px;
+  }
+
+  .temoignage img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    padding: 20px 10px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-content {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    flex: none;
+  }
+
+  .footer-content h2 {
+    font-size: 24px;
+  }
+
+  .footer-content ul li {
+    margin-bottom: 8px;
+  }
+
+  .ctn1 img#signature {
+    height: 40px;
+  }
 }
